@@ -1,6 +1,6 @@
 if [ -d "$HOME/.fzf" ]; then
   path[1,0]="$HOME/.fzf/bin"
-  manpath[1,0]="$HOME/.fzf/man"
+  export MANPATH="$MANPATH:$HOME/.fzf/man"
 
   source "$HOME/.fzf/shell/completion.zsh"
   source "$HOME/.fzf/shell/key-bindings.zsh"
